@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-RepoParser.Worker-d10254eb-249c-4d9f-90ac-ee2ed0ad68a5</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RepoParser.Core\RepoParser.Core.csproj" />
+    <ProjectReference Include="..\RepoParser.Infrastructure\RepoParser.Infrastructure.csproj" />
+  </ItemGroup>
+</Project>

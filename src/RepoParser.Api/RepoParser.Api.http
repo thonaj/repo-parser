@@ -1,0 +1,6 @@
+@RepoParser.Api_HostAddress = http://localhost:5274
+
+GET {{RepoParser.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

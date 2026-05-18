@@ -1,0 +1,5 @@
+{
+  "name": "repo-parser",
+  "private": true,
+  "workspaces": ["frontend"]
+}

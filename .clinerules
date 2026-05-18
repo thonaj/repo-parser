@@ -1,0 +1,25 @@
+# Cline Rules for repo-parser
+
+## Language Preferences
+- **Backend**: Always use **C# (.NET 8)** for all backend code, APIs, services, and business logic.
+- **Frontend**: Use **Vue.js 3** with Vite (Node.js required for frontend tooling).
+- **Database**: Use SQLite with vector extensions or ChromaDB via C# bindings.
+- **Scripting**: Use PowerShell for any local dev scripts (Windows environment).
+
+## Architecture Principles
+- Clean Architecture / Vertical Slice Architecture for the .NET backend.
+- RESTful API design with Swagger/OpenAPI documentation.
+- Real-time updates via SignalR (not raw WebSockets).
+- Dependency injection throughout the .NET backend.
+- Async/await patterns for all I/O operations.
+
+## Code Style
+- C#: Follow Microsoft .NET conventions (PascalCase for methods/properties, camelCase for parameters).
+- Use file-scoped namespaces.
+- Use primary constructors where appropriate (.NET 8 feature).
+- Prefer records for DTOs and immutable data.
+
+## Testing
+- Use NUnit for .NET unit tests.
+- Use Moq or NSubstitute for mocking.
+- Integration tests where appropriate.
