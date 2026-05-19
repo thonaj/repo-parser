@@ -1,4 +1,4 @@
-# Repo Parser — Smart Repository Docu-Bot
+# Repo Parser — Smart Repository Docu-Bot v2
 
 A full-stack tool that automatically ingests a local code repository, maps its architecture, tracks documentation drift, and flags outdated comments when code changes.
 
