@@ -1,0 +1,16 @@
+name: PR Review
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    paths:
+      - '**/*.cs'
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: thonaj/pr-reviewer@v1.0.0
+        with:
+          llm_provider: deepseek
+          api_key: ${{ secrets.LLM_API_KEY }}
